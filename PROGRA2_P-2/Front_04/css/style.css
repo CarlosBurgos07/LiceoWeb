@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, #0057a3, #00aaff);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .navegacion {
+    background-color: #222;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion li {
+    margin: 0 1rem;
+  }
+  
+  .navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    transition: background 0.3s ease;
+  }
+  
+  .navegacion a:hover {
+    background-color: #444;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .perfil-img {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .parallax {
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .proyecto {
+    background: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #0057a3;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #003d73;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  

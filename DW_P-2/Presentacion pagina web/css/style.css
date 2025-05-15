@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e2f26;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+  /* ---------------- NAVBAR ----------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: #fdd835;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fdd835;
+    transform: scale(1.05);
+}
+
+  /* ----------- CONTENIDO ----------- */
+header .logo {
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+.audio-player {
+    margin: 30px 0;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook { background-color: #3b5998; }
+.youtube { background-color: #ff0000; }
+.whatsapp { background-color: #25d366; }
+.twitch { background-color: #6441a5; }
+.twitter { background-color: #1da1f2; }
+.instagram { background-color: #e1306c; }
+.mail { background-color: #888; }
+.spotify { background-color: #1db954; }
+.tiktok { background-color: #000; }
+
+.programming, .news, .gallery, .contact {
+    padding: 30px 20px;
+}
+
+h2 {
+    color: #fdd835;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news article {
+    margin-bottom: 20px;
+}
+
+.gallery .image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+  /* ------------ FORMULARIO DE CONTACTO ------------ */
+  /* Parallax */
+.parallax {
+    background-image: url('https://cdn.pixabay.com/photo/2013/07/13/09/39/biohazard-155890_640.png'); /* Cambia esta ruta por la imagen que desees */
+    height: 300px; /* Altura de la sección parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #fdd835;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #c6b400;
+}
+
+footer {
+    background-color: #111;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #aaa;
+}
