@@ -1,0 +1,706 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #353434;
+    text-align: center;
+    font-size: large;
+    padding-top: 120px;
+}
+
+header {
+    background: rgba(0, 122, 51, 0.8);
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    height: 120px; 
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 5px; 
+}
+
+.logo img {
+    width: 80px; 
+    height: auto; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: flex-start; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen-info {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.parallax {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.parallax * {
+    position: relative;
+    z-index: 2;
+}
+
+.parallax1 {
+    background-image: url('img/Fondo_Liceo.jpeg');
+}
+
+.parallax2 {
+    background-image: url('img/Fondo_Liceop.jpeg');
+}
+
+.estadisticas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.estadistica-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.estadistica-item:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.imagen-info {
+    width: 150px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007A33;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 60px; 
+    }
+
+    .estadisticas-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .parallax {
+        padding: 50px 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .estadisticas-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .parallax {
+        background-attachment: scroll; 
+    }
+
+    .info {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .logo img {
+        width: 50px; 
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #353434;
+    text-align: center;
+    font-size: large;
+    padding-top: 120px;
+}
+header {
+    background: rgba(0, 122, 51, 0.8);
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parallax {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.parallax * {
+    position: relative;
+    z-index: 2;
+}
+
+.parallax1 {
+    background-image: url('img/laptop-614213_1280.jpg');
+}
+
+.service-item {
+    background: transparent;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(60, 59, 59, 0.1);
+    margin: 15px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.service-item h2 {
+    color: #007A33;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007A33;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #353434;
+    text-align: center;
+    font-size: large;
+    padding-top: 120px;
+}
+header {
+    background: rgba(0, 122, 51, 0.8);
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+}
+
+.mision {
+    background: #007A33;
+    color: #000000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax {
+    z-index: 1;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.parallax1 {
+    z-index: 1;
+    position: relative;
+}
+
+.parallax1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Fondo_Liceo.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.parallax2 {
+    z-index: 1;
+    position: relative;
+}
+
+.parallax2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Fondo_Liceop.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.parallax3 {
+    z-index: 1;
+    position: relative;
+}
+
+.parallax3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/16/16/43/book-5178205_640.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: -1;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.parallax-nosotros {
+    z-index: 1;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('img/Nosotros\(6\).jpg');
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.parallax-nosotros .content {
+    z-index: 2;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    z-index: 2;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: none;
+}
+
+img {
+    background-color: transparent;
+    border-radius: 10px; 
+}
+
+.contenido {
+    background: #e6f0ef;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+}
+
+.imagen-info {
+    width: 150px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007A33;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #353434;
+    text-align: center;
+    font-size: large;
+    padding-top: 120px;
+}
+header {
+    background: rgba(0, 122, 51, 0.8);
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+}
+
+h1 {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: 50px;
+    
+}
+.imagen-info {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.parallax {
+    background-image: url('');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #007A33;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.estadistica-item img,
+.service-item img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}

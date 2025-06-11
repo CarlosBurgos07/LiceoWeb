@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cineplus</title>
+  <link rel="icon" href="img/85dfd026-f88c-44ec-af3c-34ecd46161fc.png" >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cartelera">Cartelera</a></li>
+        <li><a href="#estrenos">Próximos Estrenos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h1>Bienvenido al Mundo del Cine</h1>
+    <img src="img/85dfd026-f88c-44ec-af3c-34ecd46161fc.png" alt="" class="logo" width="300" height="300"><br>
+    <h2>Disfruta de las mejores películas y estrenos en Cineplus.</h2>
+    <p>Bienvenidos a CINEPLUS, donde cada película se convierte en una experiencia inolvidable. 
+        Nos enorgullece ofrecerte salas modernas con sonido envolvente, pantallas de alta definición y un ambiente cómodo y acogedor para que disfrutes del cine como nunca antes. Desde los estrenos más esperados hasta funciones especiales para toda la familia, en CINEPLUS vivimos el cine con pasión. Contamos con servicio de dulcería, combos especiales, y atención personalizada para que tu visita sea siempre perfecta.
+    ¡Ven, siéntate, relájate y déjate llevar por la magia del cine!</p>
+  </section>
+
+  <section id="cartelera">
+    <h2>Cartelera</h2>
+    <p>Películas en exhibición:</p>
+    <div class="cartelera-container">
+        <!-- Las imágenes se generarán dinámicamente con JavaScript -->
+    </div>
+  </section>
+
+  <section id="estrenos">
+    <h2>Próximos Estrenos</h2>
+    <p>Películas que están por estrenarse...</p>
+    <div class="estrenos-container">
+        <div class="estreno">
+            <img src="img/images.jpg" alt="Estreno 1" class="estreno-img">
+            <h3>El Conjuro</h3>
+            <p>Una pareja de investigadores paranormales, Ed y Lorraine Warren, ayudan a una familia aterrorizada por una presencia oscura en su granja. Basada en hechos reales, El Conjuro mezcla tensión, misterio y sustos escalofriantes en una historia de horror sobrenatural inolvidable.</p>
+        </div>
+        <div class="estreno">
+            <img src="img/Proximamente.jpg" alt="Estreno 2" class="estreno-img">
+            <h3>La Razon de Estar Contigo</h3>
+            <p>Un perro fiel reencarna varias veces en distintas vidas, buscando el propósito de su existencia y el camino de regreso a su primer dueño. La Razón de Estar Contigo es una emotiva historia sobre el amor, la lealtad y los lazos eternos entre humanos y mascotas.</p>
+        </div>
+        <div class="estreno">
+            <img src="img/Proximamente1.jpg" alt="Estreno 3" class="estreno-img">
+            <h3> La Sirenita</h3>
+            <p>Una joven sirena llamada Ariel sueña con vivir en el mundo humano. Desafiando las reglas del océano, hace un trato con una bruja del mar para cambiar su destino. La Sirenita es una aventura musical mágica llena de amor, valentía y descubrimiento.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="carousel-container">
+    <h2>Galería</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="img/cartelera.jpeg" alt="Pelicula 1">
+        <img src="img/Cartelera2.jpeg" alt="Pelicula 2">
+        <img src="img/Cartelera3.jpeg" alt="Pelicula 3">
+        <img src="img/Cartelera4.png" alt="Pelicula 4">
+        <img src="img/Cartelera5.jpg" alt="Pelicula 5">
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Escríbenos a Cineplus.com</p>
+    <form action="enviar_contacto.php" method="POST" class="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Lista de imágenes de la cartelera
+    const peliculas = [
+        { src: "img/cartelera.jpeg", alt: "Pelicula 1" },
+        { src: "img/Cartelera2.jpeg", alt: "Pelicula 2" },
+        { src: "img/Cartelera3.jpeg", alt: "Pelicula 3" },
+        { src: "img/Cartelera4.png", alt: "Pelicula 4" },
+        { src: "img/Cartelera5.jpg", alt: "Pelicula 5" }
+    ];
+
+    // Seleccionar contenedor de la cartelera
+    const carteleraContainer = document.querySelector(".cartelera-container");
+
+    // Mostrar 3 imágenes al azar
+    const peliculasAleatorias = peliculas.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+    peliculasAleatorias.forEach(pelicula => {
+        const img = document.createElement("img");
+        img.src = pelicula.src;
+        img.alt = pelicula.alt;
+        img.classList.add("cartelera-img");
+        carteleraContainer.appendChild(img);
+    });
+  </script>
+</body>
+</html>

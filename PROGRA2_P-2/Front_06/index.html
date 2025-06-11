@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMH - Liceo Militar de Honduras</title>
+    <link rel="icon" href="img/Logo_Liceo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; justify-content: center; background: #333; }
+        nav a { color: white; text-decoration: none; padding: 15px; display: block; }
+        header, section, footer { text-align: center; padding: 40px 20px; }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        .parallax1 { background-image: url('img/office-865091_1280.jpg'); height: 300px; }
+        .parallax-nosotros { background-image: url('img/office-865091_1280.jpg'); height: 300px; }
+        .services, .estadisticas-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .service-item, .estadistica-item { width: 200px; background: #f0f0f0; padding: 10px; border-radius: 10px; }
+        form input, form textarea { width: 90%; margin: 10px auto; display: block; padding: 10px; }
+        form button { padding: 10px 20px; background: #005fab; color: white; border: none; }
+        footer { background: #333; color: white; }
+        
+        .estadistica-item img,
+        .service-item img {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/Logo_Liceo.png" alt="Logo Liceo" width="100">
+        <h1>Liceo Militar de Honduras</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section id="inicio">
+        <div class="parallax parallax1">
+            <p>Somos una Institución Cívico-Militar creada por las Fuerzas Armadas de Honduras cuya misión es formar Sub-Tenientes de reserva y Profesionales de nivel medio, líderes para nuestra nación...</p>
+        </div>
+        <div class="estadisticas-container">
+            <div class="estadistica-item"><img src="img/campus-universitario.png"><p>+1 Campus</p></div>
+            <div class="estadistica-item"><img src="img/graduados.png"><p>+2000 Graduados</p></div>
+            <div class="estadistica-item"><img src="img/leyendo.png"><p>+400 Estudiantes</p></div>
+            <div class="estadistica-item"><img src="img/profesor.png"><p>+30 Docentes</p></div>
+            <div class="estadistica-item"><img src="img/medalla-de-oro.png"><p>+10 Becados</p></div>
+            <div class="estadistica-item"><img src="img/modular.png"><p>+2 Modalidades</p></div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Educación Mixta, Jardín, Escuela e Instituto Bilingüe, Educación Secundaria, Bachillerato en Ciencias y Humanidades, Bachillerato Técnico Profesional en Informática.</p>
+        <div class="services">
+            <div class="service-item"><img src="img/peluqueria.png"><h3>Barbería</h3><p>Servicio incluido en la mensualidad.</p></div>
+            <div class="service-item"><img src="img/salud-mental.png"><h3>Psicología</h3><p>Atención psicológica integral.</p></div>
+            <div class="service-item"><img src="img/enfermeria.png"><h3>Enfermería</h3><p>Clínica interna para emergencias.</p></div>
+            <div class="service-item"><img src="img/army.png"><h3>Internado</h3><p>Alojamiento para varones.</p></div>
+            <div class="service-item"><img src="img/sistema-informatico.png"><h3>Laboratorios</h3><p>Inglés e informática moderna.</p></div>
+            <div class="service-item"><img src="img/proteger.png"><h3>Instalaciones</h3><p>Infraestructura segura.</p></div>
+            <div class="service-item"><img src="img/social.png"><h3>Seguro</h3><p>Seguro contra accidentes.</p></div>
+            <div class="service-item"><img src="img/autobus.png"><h3>Transporte</h3><p>Traslado diario de estudiantes.</p></div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+        <div class="parallax parallax-nosotros">
+            <div class="content">
+                <h2>¿Quiénes Somos?</h2>
+                <p>Formamos Sub-Tenientes de reserva y profesionales líderes mediante valores espirituales, morales y cívicos.</p>
+            </div>
+        </div>
+        <h2>Nuestra Misión</h2>
+        <img src="img/Mision.jpeg" width="100">
+        <p>Formar oficiales de reserva y profesionales de nivel medio con valores y principios éticos, comprometidos con la nación.</p>
+        <h2>Nuestra Visión</h2>
+        <img src="img/Vision.jpeg" width="100">
+        <p>Ser un centro educativo de excelencia, con liderazgo nacional e internacional y compromiso académico.</p>
+        <h2>¿Qué Ofrecemos?</h2>
+        <img src="img/Ofrecimiento.jpeg" width="100">
+        <p>Educación integral desde nivel preescolar hasta técnico profesional bilingüe.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <input type="text" placeholder="Asunto" required>
+            <textarea placeholder="Mensaje" rows="4"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Liceo Militar de Honduras. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

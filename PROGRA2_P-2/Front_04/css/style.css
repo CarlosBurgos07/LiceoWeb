@@ -1,108 +1,233 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    color: #222;
+    min-height: 100vh;
   }
   
-  header {
-    background: linear-gradient(to right, #0057a3, #00aaff);
-    color: white;
-    padding: 3rem 1rem;
+  /* Header */
+header {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    padding: 3rem 1rem 2rem 1rem;
     text-align: center;
-  }
-  
-  .navegacion {
-    background-color: #222;
-  }
-  
-  .navegacion ul {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 4px 24px rgba(0,114,255,0.15);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* Navegación */
+.navegacion {
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,114,255,0.08);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+.navegacion ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 2rem;
     margin: 0;
-    padding: 0;
-  }
-  
-  .navegacion li {
-    margin: 0 1rem;
-  }
-  
-  .navegacion a {
-    color: white;
+    padding: 1rem 0;
+}
+
+.navegacion a {
+    color: #0072ff;
     text-decoration: none;
-    padding: 1rem;
-    display: block;
-    transition: background 0.3s ease;
-  }
-  
-  .navegacion a:hover {
-    background-color: #444;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .perfil-img {
-    width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 1rem auto;
-  }
-  
-  .parallax {
-    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413');
-    height: 300px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navegacion a:hover,
+.navegacion a.active {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+}
+
+/* Parallax */
+.parallax {
+    background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80');
+    height: 320px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .proyecto {
-    background: white;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  form {
+    border-radius: 30px;
+    margin: 2.5rem auto;
+    max-width: 1100px;
+    box-shadow: 0 6px 32px rgba(0,114,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax h1 {
+    color: #fff;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    font-size: 2.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* Perfil */
+.perfil-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 2rem auto 1rem auto;
+    box-shadow: 0 4px 24px rgba(0,114,255,0.15);
+    border: 6px solid #fff;
+    object-fit: cover;
+}
+
+/* Centrar todas las imágenes del contenido principal */
+section img,
+.perfil-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0,114,255,0.10);
+    object-fit: cover;
+}
+
+
+
+/* Secciones */
+section {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 24px rgba(0,114,255,0.08);
+    position: relative;
+}
+
+section h2 {
+    color: #0072ff;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.proyecto {
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,114,255,0.06);
+    transition: transform 0.2s;
+}
+
+.proyecto:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,114,255,0.13);
+}
+
+/* Formulario */
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  input, textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #0057a3;
-    color: white;
-    padding: 0.7rem;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+input, textarea {
+    padding: 0.8rem 1rem;
+    border: 1.5px solid #b3d7ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7fbff;
+    color: #222;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    padding: 0.9rem 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #003d73;
-  }
-  
-  footer {
-    background-color: #222;
-    color: white;
+    box-shadow: 0 2px 8px rgba(0,114,255,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
+    padding: 1.5rem 0 1rem 0;
+    margin-top: 3rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -2px 16px rgba(0,114,255,0.10);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .parallax {
+        height: 180px;
+        border-radius: 18px;
+    }
+    section {
+        padding: 1.2rem 0.5rem;
+        border-radius: 14px;
+    }
+    .perfil-img {
+        width: 120px;
+        height: 120px;
+    }
+    header {
+        padding: 2rem 0.5rem 1.2rem 0.5rem;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+    .navegacion {
+        border-radius: 0 0 10px 10px;
+    }
+    footer {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        font-size: 1rem;
+    }
+}

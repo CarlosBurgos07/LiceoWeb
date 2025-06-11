@@ -1,0 +1,259 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #0275d8;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        #productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        #productos h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .producto {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .producto h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .producto p {
+            color: #555;
+        }
+
+        .producto button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .producto button:hover {
+            background-color: #4cae4c;
+        }
+
+        footer {
+            background-color: #0275d8;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .navbar {
+            width: 100%;
+            background: linear-gradient(90deg, #0275d8 70%, #5cb85c 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0.5rem 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: #fdd835;
+            color: #0275d8;
+        }
+
+        .parallax {
+            background-image: url('https://cdn.pixabay.com/photo/2017/08/09/09/50/shopping-2613984_960_720.jpg') ; 
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .parallax-inicio {
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/06/13/04/if-the-1240330_1280.jpg');
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 2rem;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        #carrito {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #e3f2fd;
+            padding: 2rem 1rem;
+            border-radius: 15px;
+            margin: 2rem auto;
+            max-width: 500px;
+            box-shadow: 0 4px 16px rgba(2,117,216,0.08);
+        }
+
+        #carrito button {
+            background-color: #fdd835;
+            color: #0275d8;
+            font-weight: bold;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        #carrito button:hover {
+            background-color: #ffb300;
+            color: #fff;
+        }
+
+        #contacto {
+            background: #e3f2fd;
+            border-radius: 15px;
+            padding: 2.5rem 1.5rem;
+            margin: 2rem auto;
+            max-width: 500px;
+            box-shadow: 0 4px 16px rgba(2,117,216,0.10);
+            text-align: center;
+        }
+
+        #contacto h2 {
+            color: #0275d8;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        #contacto p {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        #contacto a {
+            color: #0275d8;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .contacto-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contacto-form input,
+        .contacto-form textarea {
+            padding: 0.7rem;
+            border: 1px solid #b3d7ff;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: #fff;
+            color: #333;
+            resize: none;
+        }
+
+        .contacto-form input:focus,
+        .contacto-form textarea:focus {
+            border-color: #0275d8;
+            outline: none;
+        }
+
+        .contacto-form button {
+            background: #5cb85c;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .contacto-form button:hover {
+            background: #0275d8;
+        }
+
+        .contacto-redes {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .contacto-redes img {
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(2,117,216,0.12);
+            transition: transform 0.2s;
+            background: #fff;
+            width: 36px;
+            height: 36px;
+        }
+
+        .contacto-redes img:hover {
+            transform: scale(1.15);
+            background: #fdd835;
+        }
