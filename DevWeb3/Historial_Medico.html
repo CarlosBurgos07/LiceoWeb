@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Historial Médico</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+    <li><a href="../DevWeb1/Citas.html">Citas</a></li>
+    <li><a href="../DevWeb2/Especialidades.html">Especialidades</a></li>
+    <li><a href="../DevWeb3/Historial_Medico.html">Historial Médico</a></li>
+    <li><a href="../DevWeb3/Historial_Medico.html">Médicos</a></li>
+    <li><a href="../DevWeb5/Pacientes.html">Pacientes</a></li>
+    </ul>
+</nav>
+
+
+<div class="form-container">
+    <h2>Historial Médico</h2>
+
+    <form>
+    <label for="nombre">Nombre del Paciente:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="fecha">Fecha de Consulta:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="diagnostico">Diagnóstico:</label>
+    <textarea id="diagnostico" name="diagnostico" rows="3" required></textarea>
+
+    <label for="tratamiento">Tratamiento:</label>
+    <textarea id="tratamiento" name="tratamiento" rows="3" required></textarea>
+
+    <label for="medico">Médico Tratante:</label>
+    <input type="text" id="medico" name="medico" required>
+
+    <button type="submit">Guardar Historial</button>
+    </form>
+</div>
+
+</body>
+</html>

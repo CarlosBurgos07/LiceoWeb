@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pacientes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+    <li><a href="../DevWeb1/Citas.html">Citas</a></li>
+    <li><a href="../DevWeb2/Especialidades.html">Especialidades</a></li>
+    <li><a href="../DevWeb3/Historial_Medico.html">Historial Médico</a></li>
+    <li><a href="../DevWeb4/Medicos.html">Médicos</a></li>
+    <li><a href="../DevWeb5/Pacientes.html">Pacientes</a></li>
+    </ul>
+</nav>
+
+
+<div class="form-container">
+    <h2>Registro de Pacientes</h2>
+
+    <form>
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="identidad">Número de Identidad:</label>
+    <input type="text" id="identidad" name="identidad" required>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+        <option value="">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+    </select>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+
+    <button type="submit">Registrar Paciente</button>
+    </form>
+</div>
+
+</body>
+</html>
