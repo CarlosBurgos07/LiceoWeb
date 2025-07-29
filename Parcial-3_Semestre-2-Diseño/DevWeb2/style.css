@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f3fa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-top: 10px;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tarjeta {
+  background: linear-gradient(to top right, #c5d0f4, #dbe3fc);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.destacada {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta .icono {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contenido h3 {
+  margin: 10px 0;
+}
+
+.categoria {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: green;
+}
+
+.precio-bajo {
+  text-decoration: line-through;
+  font-weight: normal;
+  color: #999;
+  margin-left: 10px;
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 70px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comprar {
+  background-color: #2575fc;
+  color: white;
+}
+
+.favorito {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.agregar {
+  background-color: #2575fc;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.agotado {
+  background-color: #ccc;
+  color: #666;
+  margin-top: 10px;
+  width: 100%;
+  cursor: not-allowed;
+}
+
+/* Etiquetas */
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.etiqueta.verde {
+  background-color: #28a745;
+}
+
+.etiqueta.rojo {
+  background-color: #dc3545;
+}
