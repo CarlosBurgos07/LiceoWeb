@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.ledvance.es/05_LEDVANCE_and_Partner/4160200/image-thumb__4160200__herostage_slim_auto_9eb8c9f61294f5c2b086a15b996c461a/asset-4160200_Connolly_Hospital.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    margin: 0;
+padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    background: rgba(255,255,255,0.92);
+    max-width: 420px;
+    margin: 48px auto;
+    padding: 36px 28px 28px 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(2,117,216,0.10);
+    position: relative;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
