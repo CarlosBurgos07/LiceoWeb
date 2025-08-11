@@ -1,0 +1,115 @@
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00c4cc;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.buttons .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn.login {
+  border: 1px solid #00c4cc;
+  color: #00c4cc;
+}
+
+.btn.login:hover {
+  background-color: #e0f7f9;
+}
+
+.btn.signup {
+  background-color: #00c4cc;
+  color: white;
+}
+
+.btn.signup:hover {
+  background-color: #00a7b2;
+}
+
+/* --- CSS para el apartado precios --- */
+
+.prices-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #333;
+}
+
+.prices-section h2 {
+  color: #00c4cc;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.price-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.price-box:hover {
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+}
+
+.price-box h3 {
+  margin-bottom: 0.5rem;
+  color: #007a83;
+}
+
+.price-box p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.price-box .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00c4cc;
+}
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
